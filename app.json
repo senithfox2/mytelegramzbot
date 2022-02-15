@@ -1,0 +1,48 @@
+{
+  "name": "Stylish Text",
+  "description": "Telegram bot helps to get Stylish Text. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best",
+    "StylishText"
+  ],
+  "logo": "https://telegra.ph/file/47d0f4d2ff2685b3fb67f.png",
+  "success_url": "https://t.me/StylishText_fox_bot",
+  "website": "https://github.com/senithfox/Stylish-Text-Bot",
+  "repository": "https://github.com/senithfox/Stylish-Text-Bot",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "give your telegram user id here",
+      "value": "1684438752"
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
